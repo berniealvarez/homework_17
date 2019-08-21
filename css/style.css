@@ -125,7 +125,20 @@ h4 {
   color: #000000;
   margin: 0 auto;
 }
+@media screen 
+and (max-width: 800px) 
+and (min-width: 400px) {
+.flexcontainer {
+  flex-direction: row;
+  position: inherit;
+  width: -webkit-fill-available;
+}
+.projects {
+  margin-left: 7%;
+  margin-right: 7%;
+}
 
+}
 @media screen 
 and (max-width: 400px) 
 and (min-width: 200px) {
