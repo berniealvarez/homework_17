@@ -132,9 +132,12 @@ and (min-width: 200px) {
   .projects {
     align-items: center;
     justify-content: space-evenly;
+    width: -webkit-fill-available;
   }
-.ul {
+.flexcontainer {
   flex-direction: row;
+  position: inherit;
+  width: -webkit-fill-available;
 }
 
 }
