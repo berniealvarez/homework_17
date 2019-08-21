@@ -18,11 +18,11 @@ a:link {
     color: hotpink;
     text-decoration: none;
 }
-a:active {
+/* a:active {
     color: cornflowerblue;
-}
+} */
 a:hover {
-    color: lightblue;
+    color: cornflowerblue;
 }
 
 
@@ -68,7 +68,9 @@ ul {
     text-align: left;
     color: #000000;
   }
-
+h4:hover {
+  color: cornflowerblue;
+}
 .header-text-wrapper {
     z-index: 4;
     width: 293px;
@@ -151,6 +153,10 @@ and (min-width: 200px) {
   flex-direction: row;
   position: inherit;
   width: -webkit-fill-available;
+}
+
+.cardChi, .cardAlameda, .cardAlmanac {
+  width: 380px;
 }
 
 }
