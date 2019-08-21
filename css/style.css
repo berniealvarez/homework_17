@@ -40,10 +40,10 @@ header {
     align-items: center;
 }
     
-.flexContainer {
+/* .flexContainer {
     height: 244px;
     width: 133px;
-}
+} */
 ul {
     display: flex;
     flex-direction: column;
@@ -51,7 +51,7 @@ ul {
     align-items: center;
     list-style-type: none;
     margin: 0;
-    padding: 47px;
+    padding: 0;
     width: 25%;
     height: 100%; /* Full height */
     position: fixed; /* Make it stick, even on scroll */
@@ -87,27 +87,26 @@ ul {
 
 body {
     background-color: #FFCC66;
+    display: grid;
 }
 
 .projects {
   display: flex;
+  height: 1000px;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 86px;
+  flex-direction: column;
 }
 
   
 
-.project-1 {
-  margin-left: 247px;
-  margin-top: 79px;
-}
+
 .project-2 {
-  margin-top: 224px;
-  padding-left: 55px;
+  display: flex;
+  justify-content: flex-end;
 }
-.project-3 {
-  position: absolute;
-  margin-top: 600px;
-  padding-left: 264px;
-}
+
   /* Add some padding inside the card container */
 .container {
     padding: 2px 16px;
@@ -127,4 +126,15 @@ h4 {
   margin: 0 auto;
 }
 
+@media screen 
+and (max-width: 400px) 
+and (min-width: 200px) {
+  .projects {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+.ul {
+  flex-direction: row;
+}
 
+}
